@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Made By Anh Nguyen</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Link icon -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Link font chữ -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500,600,700,800,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<!-- link file css -->
+	<link rel="stylesheet" type="text/css" href="scss/main.css">
+</head>
+<body>
+	<!-- <img src="Images/banner.png"> -->
+	<section class="top">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 text-left left">
+						<div class="btn-left">
+							<span>Currency : GBP</span>
+							<i class="fa fa-angle-down"></i>
+							<div class="language">
+								<ul>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Chinese</a></li>
+									<li><a href="#">VietNammese</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-8 text-right right">
+						<span data-toggle="modal" data-target="#register" class="btn_2">Register</span>
+						<!-- register -->
+						<div class="modal" id="register">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div class="modal-header ">
+										<h4 class="modal-title">Login Shop</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<div class="modal-body">
+										<form action="/action_page.php">
+											<div class="form-group text-left">
+												<label for="email ">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group text-left">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+											<div class="form-group form-check">
+												<label class="form-check-label">
+													<input class="form-check-input" type="checkbox"> Remember me
+												</label>
+											</div>
+											<button type="submit" class="btn btn-primary">Submit</button>
+										</form>
+									</div>						        
+								</div>
+							</div>
+						</div>							
+						<!-- register -->
+
+						<span class="btn_2">shopping-cart</span>
+						<span class="text-center btn_1">
+							<i class="fa fa-shopping-cart"></i>
+							 empty  
+							 <i class="fa fa-angle-down"></i> 
+						</span>							
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end header-top -->
+	</section>
+	<!-- end top -->
+
+	<header>
+		<!-- the chua menu va logo -->
+		<div class="row main-menu">
+			<div class="col-2 icon-menu">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="col-xl-4 col-8 text-left logo">
+				<a href="#"><img src="Images/Logo.png"></a>
+			</div>
+			<div class="col-2 icon-search">
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="col-xl-8 d-flex justify-content-end menu">
+				<ul class="d-flex justify-content-end">
+					<li><a href="#">MENS</a><i class="fa fa-angle-down"></i>
+						<div class="child-menu">
+							<div class="row">
+								<div class="col-xl-6 col-10">
+									<p>CASUALS</p>
+									<ul>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+									</ul>
+								</div>
+								<div class="col-xl-6 col-10">
+									<p>CASUALS</p>
+									<ul>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">Home</a></li>
+									</ul>				
+								</div>
+								<div class="col-12">
+									<div class="sale">
+										<h1>AUTUNM SALE!</h1>
+										<H2>UP TO 50% OFF</H2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">WOMENS</a><i class="fa fa-angle-down"></i></li>
+					<li><a href="#">THE BRAND</a></li>
+					<li><a href="#">LOCAL STORES</a><i class="fa fa-angle-down"></i></li>
+					<li><a href="#">LOOKBOOK</a><i class="fa fa-angle-down"></i></li>
+				</ul>				
+				<div class="search">
+					<input type="text" placeholder="Search..." name="">
+					<i class="fa fa-search"></i>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end main-menu -->
+		<button class="btn btn-outline-primary">SHOP MEN COLLECTION</button>
+		<div class="nen"></div>
+	</header>
+	<!-- end header -->
+
+	<section class="content-1">
+		<div class="tabs">
+			<ul class="d-flex justify-content-start">
+				<li data-danhmuc="popular" class="hover">popular</li>
+				<li data-danhmuc="new-arrivals">new arrivals</li>
+				<li data-danhmuc="best-seller">best seller</li>
+				<li data-danhmuc="special-offers">special offers</li>
+				<li data-danhmuc="coming-soon">coming soon</li>
+			</ul>
+			<!-- end ul -->
+
+			<div class="_1tab active">
+				<div class="row popular">
+					<div class="col-lg-6 col-12 _1tab-left">
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<!-- img -->
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<!-- top price -->
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+							<!-- Infor product-->
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<!-- èn left -->
+					<div class="col-lg-6 col-12 _1tab-right">
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<!-- end mim -->
+					</div>	
+					<!-- end right -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end tabs -->
+			
+			<div class="_1tab">
+
+
+				<div class="row new-arrivals">
+					<div class="col-sm-6 _1tab-left">		
+						<div class="min">
+							<img src="Images/sanphamnho3.png">
+							<!-- img -->
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<!-- top price -->
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+							<!-- Infor product-->
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho3.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="big">
+							<img src="Images/sanphamto2.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>						
+					</div>	
+					<!-- èn left -->
+					<div class="col-sm-6 _1tab-right">
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<!-- end mim -->
+					</div>	
+					<!-- end right -->
+				</div>
+				<!-- end row -->
+
+				<!-- end row -->
+			</div>
+			<!-- end tabs -->
+
+			<div class="_1tab">
+				<div class="row best-seller">
+					<div class="col-sm-6 _1tab-left">		
+						<div class="min">
+							<img src="Images/sanphamnho3.png">
+							<!-- img -->
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<!-- top price -->
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+							<!-- Infor product-->
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho3.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>						
+					</div>	
+					<!-- èn left -->
+					<div class="col-sm-6 _1tab-right">
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<div class="min">
+							<img src="Images/sanphamnho4.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho4.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<!-- end mim -->
+					</div>	
+					<!-- end right -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end 1tab -->
+
+			<div class="_1tab">
+				<div class="row coming-soon">
+					<div class="col-sm-6 _1tab-left">		
+						<div class="min">
+							<img src="Images/sanphamnho.png">
+							<!-- img -->
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<!-- top price -->
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+							<!-- Infor product-->
+						</div>
+						<div class="min">
+							<img src="Images/sanpham2.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="big">
+							<img src="Images/sanphamto.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>						
+					</div>	
+					<!-- èn left -->
+					<div class="col-sm-6 _1tab-right">
+						<div class="big">
+							<img src="Images/sanphamto2.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<div class="min">
+							<img src="Images/sanphamnho3.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="min">
+							<img src="Images/sanphamnho4.png">
+							<div class="price">
+								<i class="fa fa-pound-sign">$</i>
+								<span>99.99</span>
+							</div>
+							<div class="text-center content-sp">
+								<A href="#"><p>Womens burnt orange casual tee  £29.95</p></a>
+								<span>Classic casual t-shirt for women on the move.<br>100% cotton.</span>
+								<div class="text-center icon">
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<a href=""><i class="fa fa-heart"></i></a>
+									<a href=""><i class="fa fa-arrows-alt"></i></a>
+								</div>
+							</div>
+						</div>	
+						<!-- end mim -->
+					</div>	
+					<!-- end right -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end 1 tab -->
+
+			<div class="_1tab">
+				<h1>Chị tìm cái gi mà kich sang tận đây ^^</h1>
+			</div>
+		</div>
+		<!-- end -->
+	</section>
+	<!-- end content-1 -->
+
+	<section class="content-2">
+		<div class="row">
+			<div class="services ">
+				<div class="el">
+					<img src="Images/sv1.png">
+					<div class="text-right content-service">
+						<h2>Men's</h2>
+						<h1>LOOKBOOK</h1>
+						<span>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem onsecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</span>
+						<button class="btn btn-outline-primary">view now</button>
+					</div>
+				</div>
+			</div>
+			<!-- end sẻvice -->
+			<div class="services ">
+				<div class="el">
+					<img src="Images/sv1.png">
+					<div class="text-right content-service">
+						<h2>Men's</h2>
+						<h1>LOOKBOOK</h1>
+						<span>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem onsecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</span>
+						<button class="btn btn-outline-primary">view now</button>
+					</div>
+				</div>
+			</div>
+			<!-- end sẻvice -->
+			<div class="services ">
+				<div class="el">
+					<img src="Images/sv1.png">
+					<div class="text-right content-service">
+						<h2>Men's</h2>
+						<h1>LOOKBOOK</h1>
+						<span>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem onsecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</span>
+						<button class="btn btn-outline-primary">view now</button>
+					</div>
+				</div>
+			</div>
+			<!-- end sẻvice -->		
+		</div>
+	</section>
+	<!-- end content-2 -->
+
+	<footer>
+		<div class="container">
+			<div class="row banner-footer">
+				<div class="col-lg col-sm-4 col-6">
+					<p>Information</p>
+					<ul>
+						<li><a href="#">The brand</a></li>
+						<li><a href="#">Local stores</a></li>
+						<li><a href="#">Custom services</a></li>
+						<li><a href="#">Privacy & cookies</a></li>
+						<li><a href="#">Site map</a></li>
+					</ul>
+				</div>
+				<div class="col-lg col-sm-4 col-6">
+					<p>WHY BUY FROM US</p>
+					<ul>
+						<li><a href="#">Shipping & return</a></li>
+						<li><a href="#">Secure shopping</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Award winning</a></li>
+						<li><a href="#">Ethical trading</a></li>
+					</ul>
+				</div>
+				<div class="col-lg col-sm-4 col-6">
+					<p>Your account</p>
+					<ul>
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">View cart</a></li>
+						<li><a href="#">View your lookbook</a></li>
+						<li><a href="#">Track an order</a></li>
+						<li><a href="#">Update information</a></li>
+					</ul>
+				</div>
+				<div class="col-lg col-sm-4 col-6">
+					<p>Lookbook</p>
+					<ul>
+						<li><a href="#">Latest posts</a></li>
+						<li><a href="#">Men’s lookbook</a></li>
+						<li><a href="#">Women’s lookbook</a></li>
+						<li><a href="#">Lookbooks RSS feed</a></li>
+						<li><a href="#">View your lookbook</a></li>
+						<li><a href="#">Delete your lookbook</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-sm-8 col-12">
+					<p>contact details</p>
+					<ul>
+						<li><a href="#">Head Office: Avenue Fashion, 180-182 Regent Street, London.</a></li>
+						<li><a href="#">Telephone: 0123-456-789 Email: support@yourwebsite.com</a></li>						
+					</ul>
+				</div>
+			</div>
+			<!-- end banner-footer -->
+			<div class="center-footer">
+				<div class="row">
+					<div class="text-center ct-left">
+						<h3>award winner</h3>
+						<h2>fashion awards 2016</h2>
+					</div>
+					<div class="text-center ct-right">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-pinterest"></i>
+					</div>
+				</div>
+			</div>
+			<!-- end center-footer -->
+		</div>
+		<!-- end container -->
+	</footer>
+	<!-- end footer -->    
+
+	<section class="end">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 bottom">
+					<span>© 2016 Avenue Fashion</span>
+					<small>TM</small>
+				</div>
+				<div class="col-sm-7  text-right bottom">
+					<span class="sp-left">Design by RobbyDesigns.com</span>
+					<span class="sp-right">Dev by Loremipsum.com</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end  -->
+
+	<span class="up"><i class="fa fa-chevron-up"></i></span>
+			<!-- Optional JavaScript -->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- load thư viện isotope -->
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<!-- Load file js -->
+	<script type="text/javascript" src="js/js.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
